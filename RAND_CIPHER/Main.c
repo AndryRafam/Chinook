@@ -71,7 +71,7 @@ int main (int argc, char **args)
 		Blowfish_Init(Blowfish_key(), len_Blowfish_key);
 		crack_text(salt_text,&L,&R,strlen(salt_text));
 		Blowfish_Encipher(&L, &R);
-		printf("%08o %08o\n\n", L, R);
+		printf("%08o %08o\n\n", R, L);
 	}
 	else if (select == 1) // Spritz
 	{
