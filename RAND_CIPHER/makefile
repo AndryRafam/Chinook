@@ -16,5 +16,5 @@ Spritz.o : Spritz.c function.h
 VMPC.o : VMPC.c VMPC.h function.h
 	    gcc -c VMPC.c
 
-Main.o : Main.c Blowfish.h function.h hash.h ORIG_S_P.h Spritz.h VMPC.h
+Main.o : Main.c Blowfish.h function.h hash.h ORIG_S_P.h Spritz.h VMPC.h Colors.h
 	    gcc -c -lssl Main.c -lcrypto
