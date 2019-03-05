@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
+#include <stdint.h>
 #include "function.h"
 
 void swap (unsigned char *a, unsigned char *b)
