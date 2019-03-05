@@ -52,4 +52,34 @@ char *Salt()
 	return string;
 }
 
+// Crack function
+void crack_text (unsigned char *text, uint32_t *Left, uint32_t *Right, int len_text)
+{
+	int block_len;
+	while (len_text)
+	{
+		Left = Right = 0UL;
+
+		// Crack the plaintext string into two 32-bit blocks; pad with zeros if necessary
+		for (block_len = 0; block_len < 4; block_len++)
+		{
+			if (len_text)
+			{
+				Left += *text++; // Copy string
+				len_text--;
+			}
+			else Left += 0; // Pad with zero
+		}
+		for (block_len = 0; block_len < 4; block_len++)
+		{
+			if (len_text)
+			{
+				Right += *text++; // Copy string
+				len_text--;
+			}
+			else Right += 0; // Pad with zero
+		}
+	}
+}
+
 	
