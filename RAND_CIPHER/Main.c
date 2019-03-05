@@ -72,20 +72,20 @@ int main (int argc, char **args)
 		Blowfish_Init(Blowfish_key(), len_Blowfish_key);
 		crack_text(salt_text,&L,&R,strlen(salt_text));
 		Blowfish_Encipher(&L, &R);
-		printf("%08o %08o\n\n", R, L);
+		printf("%08X %08X\n\n", R, L);
 	}
 	else if (select == 1) // Spritz
 	{
 		SPRITZ_Encrypt (salt_text, SPRITZ_Key(), ciphertext_spritz);		
 		for (int i = 0; i < strlen(salt_text); i++)
-			fprintf(stdout,"%02o%c", *(ciphertext_spritz + i), i < (strlen(salt_text)-1) ? ' ' : '\n');
+			fprintf(stdout,"%02X%c", *(ciphertext_spritz + i), i < (strlen(salt_text)-1) ? ' ' : '\n');
 		printf("\n");
 	}
 	else if (select == 2) // VMPC
 	{
 		VMPC_Encrypt (salt_text, VMPC_key(), ciphertext_vmpc);
 		for (int x = 0; x < strlen(salt_text); x++)
-			fprintf(stdout,"%02o%c", *(ciphertext_vmpc + x), x < (strlen(salt_text)-1) ? ' ' : '\n');
+			fprintf(stdout,"%02X%c", *(ciphertext_vmpc + x), x < (strlen(salt_text)-1) ? ' ' : '\n');
 		printf("\n");	
 	}
 	fprintf(stdout, Cyan "\t***********************************************************\n\n"); printf(Reset);	
