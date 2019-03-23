@@ -1,7 +1,7 @@
 # RAND_CIPHER
 RAND_CIPHER is a random encryption program; based on Blowfish (Symmetric key block Cipher), Spritz (variant of ARC4) and VMPC (Variably Modified Permutation Composition); and also three hash function SHA-256, SHA-384 and SHA-512. The program also goes with a salt function which adds extra bits at the end of the clear message, in order to reduce the risk of collision.
 
-- If no argument is given aftet ./Main.exe, default argument is: "THIS A TEST".
+- If no argument is given after ./Main.exe, default argument is: "THIS A TEST".
 
 # How its works ?
 - 1) Salt the clear message with a pseudo random salt function
