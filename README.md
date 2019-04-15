@@ -7,7 +7,7 @@ RAND_CIPHER is a random encryption program; based on Blowfish (Symmetric key blo
   - Print folder: Contains print function and its (direct) dependencies
   
 - Main folder
-  - Main.cpp
+  - Main.c
   - Colors.h
   - function.h
 
