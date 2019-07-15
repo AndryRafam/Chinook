@@ -17,7 +17,7 @@ int main (int argc, char **args)
 {
 	system("clear");
 	fprintf(stdout, "\n");
-	fprintf(stdout, Cyan "\t********** RAND_CIPHER - Andry RAFAM ANDRIANJAFY **********\n\n"); printf(Reset);	
+	fprintf(stdout, Cyan "\t********** Chinook - Andry RAFAM ANDRIANJAFY **********\n\n"); printf(Reset);	
 	
 	if (argc != 2)
 	{
