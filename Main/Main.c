@@ -1,4 +1,4 @@
-/* RAND_CIPHER (RANDOM CIPHER program) - March 2019
+/* CHINOOK (RANDOM CIPHER program)
 
 Author: Andry RAFAM ANDRIANJAFY
 
@@ -17,7 +17,7 @@ int main (int argc, char **args)
 {
 	system("clear");
 	fprintf(stdout, "\n");
-	fprintf(stdout, Cyan "\t********** Chinook - Andry RAFAM ANDRIANJAFY **********\n\n"); printf(Reset);	
+	fprintf(stdout, Cyan "\t********** CHINOOK - Andry RAFAM ANDRIANJAFY **********\n\n"); printf(Reset);	
 	
 	if (argc != 2)
 	{
@@ -28,4 +28,3 @@ int main (int argc, char **args)
 	print(args[1]);
 	return EXIT_SUCCESS;
 }
-		   
