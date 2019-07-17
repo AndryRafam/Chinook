@@ -22,7 +22,7 @@ int main (int argc, char **args)
 	if (argc != 2)
 	{
 		args[1] = "THIS IS A TEST"; /*Default argument if no argument is given.*/
-		fprintf(stdout, "[ No argument is given after ./Main.exe. Default argument is ] >> %s", args[1]);
+		fprintf(stdout, "[ No argument is given after ./exe. Default argument is ] >> %s", args[1]);
 		printf("\n\n");	
 	}		
 	print(args[1]);
