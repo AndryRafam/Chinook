@@ -67,7 +67,7 @@ void print (char *argument)
 		SPRITZ_Encrypt (salt_text, SPRITZ_Key(), ciphertext_spritz);		
 		for (int x = 0; x < strlen(salt_text); x++){
 			count += 1;
-			fprintf(stdout,"%02o ", *(ciphertext_spritz + x));
+			fprintf(stdout,"  %02o", *(ciphertext_spritz + x));
 			if (count%4 == 0)
 				printf("\n");
 		}
@@ -78,7 +78,7 @@ void print (char *argument)
 		VMPC_Encrypt (salt_text, VMPC_key(), ciphertext_vmpc);
 		for (int x = 0; x < strlen(salt_text); x++){
 			count += 1;
-			fprintf(stdout,"%02o ", *(ciphertext_vmpc + x));
+			fprintf(stdout,"  %02o", *(ciphertext_vmpc + x));
 			if (count%4 == 0)
 				printf("\n");
 		}
@@ -89,7 +89,7 @@ void print (char *argument)
 		RC4A_Encrypt (salt_text, RC4A_Key(), ciphertext_RC4A);
 		for (int x = 0; x < strlen(salt_text); x++){
 			count += 1;
-			fprintf(stdout, "%02o ", *(ciphertext_RC4A + x));
+			fprintf(stdout, "  %02o", *(ciphertext_RC4A + x));
 			if (count%4 == 0)
 				printf("\n");
 		}
