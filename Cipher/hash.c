@@ -12,7 +12,7 @@ void SHA_256 (unsigned char *text)
 	int count = 0;
 	for (int x = 0; x < SHA256_DIGEST_LENGTH; x++){
 		count += 1;
-		printf("%02X ", digest_256[x]);
+		printf("  %02X", digest_256[x]);
 		if (count % 8 == 0)
 			printf("\n");
 	}
@@ -26,7 +26,7 @@ void SHA_384 (unsigned char *text)
 	int count = 0;
 	for (int x = 0; x < SHA384_DIGEST_LENGTH; x++){
 		count += 1;
-		printf("%02X ", digest_384[x]);
+		printf("  %02X", digest_384[x]);
 		if (count % 8 == 0)
 			printf("\n");
 	}
@@ -40,7 +40,7 @@ void SHA_512 (unsigned char *text)
 	int count = 0;
 	for (int x = 0; x < SHA512_DIGEST_LENGTH; x++){
 		count += 1;
-		printf("%02X ", digest_512[x]);
+		printf("  %02X", digest_512[x]);
 		if (count % 8 == 0)
 			printf("\n");
 	}
