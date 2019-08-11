@@ -1,4 +1,4 @@
-![Output Example](https://github.com/AndryRafam/Program-Output/blob/master/Chinook-Sikorsky.png)
+![Output Example](https://github.com/AndryRafam/Program-Output/blob/master/Chinook.gif)
 
 Chinook is a random encryption program; based on Blowfish (Symmetric key block Cipher), Spritz (variant of ARC4); VMPC (Variably Modified Permutation Composition) and RC4A; and also three hash function SHA-256, SHA-384 and SHA-512. The program also goes with a salt function which adds extra bits at the end of the clear message, in order to reduce the risk of collision.
 
