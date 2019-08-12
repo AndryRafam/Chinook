@@ -2,13 +2,11 @@
 
 Chinook is a random encryption program; based on Blowfish (Symmetric key block Cipher), Spritz (variant of ARC4); VMPC (Variably Modified Permutation Composition) and RC4A; and also three hash function SHA-256, SHA-384 and SHA-512. The program also goes with a salt function which adds extra bits at the end of the clear message, in order to reduce the risk of collision.
 
-# Files included
-- Randomize folder
-- Cipher folder
-- Print folder  
-- Main folder
+# Folder included
+- Tools folder
+- Cipher folder  
+- Test folder (Contains automated testing / Main program)
 - Header folder
-- Makefile
 
 # How to run on Linux (Debian / Ubuntu)
 - 1) Upload the program
@@ -18,6 +16,7 @@ Chinook is a random encryption program; based on Blowfish (Symmetric key block C
 
 # How its works ?
 - 1) Salt the clear message with a pseudo random salt function
-- 2) Choose randomly the digital signature
-- 3) Choose randomly the encryption function
-- 4) Output all
+- 2) Randomly shuffle the salt message
+- 3) Choose randomly the digital signature
+- 4) Choose randomly the encryption function
+- 5) Output all
