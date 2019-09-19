@@ -20,3 +20,6 @@ Chinook is a random encryption program; based on Blowfish (Symmetric key block C
 - 3) Choose randomly the digital signature
 - 4) Choose randomly the encryption function
 - 5) Output all
+
+# WARRANTY
+THE SOFTWARE IS UNDER MIT LICENSE AND IS PROVIDED "AS IS", WITH NO WARRANTY OF ANY KIND.
